@@ -18,6 +18,8 @@ Remember: *<b>R</b>eboot <b>E</b>ven <b>I</b>f <b>S</b>ystem <b>U</b>tterly <b>B
 
 To use Magic SysRq, hold down the right Alt key and PrtSc, and then type (In Order) R, E, I, S, U, B. The machine should then reboot. If for some reason this doesn't work, then hold the power button down to power off the machine. 
 
+#### If the machine freezes shortly after login or before the login screen appears, follow the steps section 'disable nouveau modeset' under Additional Notes. These steps will have to be followed at every boot until the nvidia drivers are installed. 
+ 
 ### Some things to note before Beginning:
 
 * __This guide assumes decent knowledge of the Linux command line__
@@ -94,7 +96,7 @@ once you are at the desktop, open the terminal and run `sudo rmmod ideapad_lapto
 
 If the above command does not get wifi working, you may need to perform steps under "Additional Notes" at the bottom.    
 
-Without closing the terminal, run the following command `sudo apt-update && sudo apt dist-upgrade`. Follow any terminal prompts and when updates are complete, restart the computer. After rebooting, follow the above steps for getting wifi working. the next step will get wifi working permanently.
+Without closing the terminal, run the following command `sudo apt update && sudo apt dist-upgrade`. Follow any terminal prompts and when updates are complete, restart the computer. After rebooting, follow the above steps for getting wifi working. the next step will get wifi working permanently.
 
 ## 7. Use ukuu to update the kernel
 
@@ -160,6 +162,22 @@ If the above commands complete successfully, then you have successfully configur
 
 # Additional Notes
 
+### Disable Nouveau Modeset
+
+to disable modeset for the nouveau module, follow the below steps
+
+reboot the machine, as soon as the screen turns purple (After the Legion logo screen), press esc. You should see a screen similar to the following.
+
+![Selecting Ubuntu in Grub](https://raw.githubusercontent.com/kfechter/LegionY530Ubuntu/0fc36c44e069d4e157faa4b16e87cc9625a7c0e1/Images/grubSelectionScreen.png)
+
+highlight the entry that says "Ubuntu" and press 'e', you should get a screen that looks similar to the following.
+
+![Adding Nouveau.modeset=0](https://raw.githubusercontent.com/kfechter/LegionY530Ubuntu/0fc36c44e069d4e157faa4b16e87cc9625a7c0e1/Images/kernelOptions.png)
+
+find the section that says 'quiet splash', and add nouveau.modeset=0 to it so it reads 'quiet splash noveau.modeset=0'
+
+press F10 to boot with the changes.
+
 ### Nvidia Switching
 With kernel 4.20, rebooting is no longer necessary to switch profiles, however log out and log in is still required.
 
@@ -173,7 +191,7 @@ run the command `sudo modprobe r8822be`
 
 ### Configuring Audio Jack to Work With Microphones
 
-run the command `/etc/modprobe.d/alsa-base.conf`    
+run the command `sudo nano /etc/modprobe.d/alsa-base.conf`    
 add `options snd-hda-intel model=dell-headset-multi` to the end of the file    
 reboot    
 
