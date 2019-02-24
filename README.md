@@ -100,6 +100,8 @@ Without closing the terminal, run the following command `sudo apt update && sudo
 
 ## 7. Use ukuu to update the kernel
 
+### There have been many users having issues with kernel versions higher than 4.20.10. Choosing this version is the safest bet
+
 open a terminal
 
 
@@ -120,9 +122,9 @@ Open ukuu from the application screen, then find kernel v4.20 (or latest kernel/
 
 After the kernel is installed, reboot the laptop. Wifi should be working, but if it isnt follow the directions for Realtek Wifi cards underneath the additional notes section
 
-## 8. Disable AER to prevent log spam
+## 8. Disable AER to prevent log spam (kernel 4.20.10 only)
 
-After upgrading to kernel 4.20.x, there will be many warnings/errors displayed on boot. These errors contain the text 'aer' These warnings don't appear affect boot, but are annoying. PCIe AER can be disabled, which will prevent these messages.    
+After upgrading to kernel 4.20.10, there will be many warnings/errors displayed on boot. These errors contain the text 'aer' These warnings don't appear affect boot, but are annoying. PCIe AER can be disabled, which will prevent these messages.    
 
 run the following command   
 ` sudo nano /etc/default/grub`    
@@ -214,7 +216,32 @@ The following software can be used to monitor temperatures, adjust power managem
 * PowerTop - Process monitor that shows power usage of running processes
       ` sudo apt install -y powertop`
       
-The following guide can be used to configure automatic fan control: [lm-sensors and pwmcontrol setup](http://tuxtweaks.com/2008/08/how-to-control-fan-speeds-in-ubuntu/)
+The following guide can be used to configure automatic fan control: [lm-sensors and pwmcontrol setup](http://tuxtweaks.com/2008/08/how-to-control-fan-speeds-in-ubuntu/)   
+
+# Getting Airplane mode button working
+
+The airplane mode button seems to work in TTY mode, but not in GUI mode. this can be fixed by setting the xmodmap for the keycode of the button in GUI mode. To get this working, follow the steps below. 
+
+run the command `gedit ~/.Xmodmap`    
+add the following contents, then save the file    
+` keycode 255 = XF86WLAN NoSymbol XF86WLAN `   
+run the following command ` gedit ~/.config/autostart/my-xmodmap.desktop`    
+add the following content, replacing <username> with your username, then save the file          
+
+``` 
+[Desktop Entry]
+Name=MyXmodmap   
+Exec=/usr/bin/xmodmap /home/<username>/.Xmodmap
+Terminal=false
+Type=Application
+X-GNOME-Autostart-enabled=true
+```
+ 
+run the command ` chmod +x ~/.config/autostart/my-xmodmap.desktop`
+
+restart the computer. 
+
+The airplane mode button should now work properly
 
 # Setting Governor to performance to prevent lag on battery
 
