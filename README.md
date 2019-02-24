@@ -37,7 +37,7 @@ To use Magic SysRq, hold down the right Alt key and PrtSc, and then type (In Ord
 Now that the important information is out of the way, let's begin
 
 ## 1. Download the Ubuntu disk image and imaging software
-__NOTE: Using a version other than the latest LTS should work, but some guide steps may differ or not work__
+__NOTE: Installing a version other than this guide recommends may work but steps of the guide may differ or be non-functional__
 * [Ubuntu 18.04.3 LTS](http://releases.ubuntu.com/18.04/ubuntu-18.04.3-desktop-amd64.iso)
 * [Etcher](https://www.balena.io/etcher/)
 
