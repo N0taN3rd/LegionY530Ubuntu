@@ -54,7 +54,7 @@ The airplane mode button should now work properly
 
 ### Setting Governor to performance to prevent lag on battery
 
-:no_entry #### This may decrease battery life, proceed with caution :no_entry
+:no_entry_sign: #### This may decrease battery life, proceed with caution :no_entry_sign:
 
 The default governor for battery power is balanced. You may notice some lag in certain activities, most notably opening GNOME overview. You can use cpufrequtils to force the governor to performance, which mitigates these performance issues.
 
