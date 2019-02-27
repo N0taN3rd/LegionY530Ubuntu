@@ -7,12 +7,13 @@
 This repository provides scripts and a step by step on how to get Ubuntu running on the Lenovo Legion Y530.
 
 
-These steps were tested on a Legion with the following Specs:
+These steps were tested on a Legion with the following Specs, but should work for all configurations:
 
 * i7-8750H
-* 16GB DDR4
+* 32GB DDR4
 * 1920x1080 Resolution (60Hz)
-* 256GB NVMe SSD + 1TB Platter
+* 512GB NVMe SSD + 500GB SATA SSD
+* Geforce GTX 1050Ti
 
 However this should work on all configurations.
 
