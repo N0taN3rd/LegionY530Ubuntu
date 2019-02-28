@@ -27,4 +27,14 @@ Once the Settings have been saved, the machine will reboot. on the legion screen
 
 ![Boot Device Selection](https://raw.githubusercontent.com/kfechter/LegionY530Ubuntu/8234d4c4a473c91043bc3caae6725cc2e917647b/Images/bootManager.jpg "Boot Device Selection")
 
-Select your flashdrive on the list, and press enter. <continue to install>
+Select your flashdrive on the list, and press enter. 
+
+##### Install Ubuntu
+
+Select the "Install Ubuntu" icon on the desktop and follow the wizard to install Ubuntu on your desired drive. Once completed, select the option to restart the computer.
+
+##### Install any available updates
+
+Run the following command `sudo apt update && sudo apt dist-upgrade`. Follow any terminal prompts and when updates are complete, restart the computer.
+
+<Continue to Install Nvidia>
