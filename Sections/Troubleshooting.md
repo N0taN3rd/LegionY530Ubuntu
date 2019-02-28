@@ -25,3 +25,10 @@ highlight the entry that says "Ubuntu" and press 'e', you should get a screen th
 find the section that says 'quiet splash', and add nouveau.modeset=0 to it so it reads 'quiet splash noveau.modeset=0'
 
 press F10 to boot with the changes.
+
+
+### Nvidia switching doesn't seem to be working (i.e, nvidia mode enabled and external screens don't work)
+
+if after doing sudo prime-select nvidia, you notice that external screens don't work. Try logging out and back in. If they still don't work, then reboot the machine. 
+
+##### __Note: If you deviate from the stock kernel, this may cause issues with the nvidia drivers__
