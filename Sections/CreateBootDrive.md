@@ -15,5 +15,7 @@ After installing and opening Etcher, select your USB device and downloaded .iso 
 
 ![Etcher Screenshot 3](https://github.com/kfechter/LegionY530Ubuntu/raw/84dfd189e2f21102bcb7e97d45d539b353a55143/Images/etcherScreen3.PNG "Etcher Screenshot")
 
+#### Once the drive is created, continue to booting the live disk and installing Ubuntu
+
 [Install Ubuntu Without SecureBoot](Sections/SecureBootOff.md)    
 [Install Ubuntu With SecureBoot](Sections/SecureBootOn.md)
