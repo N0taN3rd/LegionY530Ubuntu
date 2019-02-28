@@ -10,6 +10,4 @@ This repository provides scripts and a step by step on how to get Ubuntu running
 
 Now that the Kernel doesn't need to be changed, Disabling Secureboot is no longer necessary. This guide now has two pathways, one for installing with secureboot, and one for disabling secureboot. If at any point, you run into issues, you can view the [troubleshooting readme](Sections/Troubleshooting.md) file for common solutions. 
 
-[Install Ubuntu Without SecureBoot](Sections/SecureBootOff.md)
-
-[Install Ubuntu With SecureBoot](Sections/SecureBootOn.md)
+[Create Boot Drive](Sections/CreateBootDrive.md)
