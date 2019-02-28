@@ -4,7 +4,7 @@ To install Ubuntu without secureboot enabled, follow the steps below.
 
 To get to advanced startup, open windows settings, then click Update & Security. Select Recovery from the left hand side, and click the button labeled restart now under Advanced Startup. 
 
-![Advanced Startup Windows](https://raw.githubusercontent.com/kfechter/LegionY530Ubuntu/<commitHash>/Images/windowsSettings.jpg "Advanced Startup")
+![Advanced Startup Windows](https://raw.githubusercontent.com/kfechter/LegionY530Ubuntu/ab92b30dcb6e4ec996fdbd1db41022106beaf51e/Images/windowsSettings.PNG "Advanced Startup")
 
 ![Advanced Startup](https://raw.githubusercontent.com/kfechter/LegionY530Ubuntu/8234d4c4a473c91043bc3caae6725cc2e917647b/Images/chooseOptions.jpg "Advanced Startup")
 
