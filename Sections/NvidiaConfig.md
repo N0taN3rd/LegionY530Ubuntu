@@ -23,3 +23,5 @@ Should now output 'intel'
 If the above commands complete successfully, then you have successfully configured the nvidia drivers.
 
 #### __Note: You should only need to log off and log on to complete the switch, but if that doesn't work, try rebooting.
+
+Your OS is fully configured, but if you want some additional configurations or helpful software, you can view the [Advanced Features Guide](Advanced.md)
