@@ -37,4 +37,4 @@ Select the "Install Ubuntu" icon on the desktop and follow the wizard to install
 
 Run the following command `sudo apt update && sudo apt dist-upgrade`. Follow any terminal prompts and when updates are complete, restart the computer.
 
-<Continue to Install Nvidia>
+[Install the Nvidia Drivers](NvidiaConfig.md)
