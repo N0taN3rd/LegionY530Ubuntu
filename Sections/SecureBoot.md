@@ -1,6 +1,10 @@
-# Disable SecureBoot
+# Install Ubuntu without SecureBoot
 
-Once Etcher has completed (It will show a screen with the message "Flash Complete"), you can close it. While Ubuntu can be installed with SecureBoot enabled, some drivers and features will not work. To disable, the machine needs to be booted into the UEFI settings. To get into UEFI settings, open the start menu in Windows and select restart while holding down shift. Hold down shift until you see the advanced option screen. 
+To install Ubuntu without secureboot enabled, follow the steps below. 
+
+To get to advanced startup, open windows settings, then click Update & Security. Select Recovery from the left hand side, and click the button labeled restart now under Advanced Startup. 
+
+![Advanced Startup Windows](https://raw.githubusercontent.com/kfechter/LegionY530Ubuntu/<commitHash>/Images/windowsSettings.jpg "Advanced Startup")
 
 ![Advanced Startup](https://raw.githubusercontent.com/kfechter/LegionY530Ubuntu/8234d4c4a473c91043bc3caae6725cc2e917647b/Images/chooseOptions.jpg "Advanced Startup")
 
@@ -18,3 +22,7 @@ Secure Boot. Press enter, select "Disabled" using the arrow keys, then press ent
 ![UEFI Firmware Setting](https://raw.githubusercontent.com/kfechter/LegionY530Ubuntu/8234d4c4a473c91043bc3caae6725cc2e917647b/Images/biosMain.jpg "UEFI Firmware Settings")
 
 ![Security Settings](https://raw.githubusercontent.com/kfechter/LegionY530Ubuntu/8234d4c4a473c91043bc3caae6725cc2e917647b/Images/biosSecurity.jpg "Security Settings")
+
+Once the Settings have been saved, the machine will reboot. on the legion screen press the F12 button until you see the boot selection screen. 
+
+![Boot Device Selection](https://raw.githubusercontent.com/kfechter/LegionY530Ubuntu/8234d4c4a473c91043bc3caae6725cc2e917647b/Images/bootManager.jpg "Boot Device Selection")
