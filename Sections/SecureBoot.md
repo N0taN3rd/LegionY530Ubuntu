@@ -26,3 +26,5 @@ Secure Boot. Press enter, select "Disabled" using the arrow keys, then press ent
 Once the Settings have been saved, the machine will reboot. on the legion screen press the F12 button until you see the boot selection screen. 
 
 ![Boot Device Selection](https://raw.githubusercontent.com/kfechter/LegionY530Ubuntu/8234d4c4a473c91043bc3caae6725cc2e917647b/Images/bootManager.jpg "Boot Device Selection")
+
+Select your flashdrive on the list, and press enter. <continue to install>
