@@ -1,4 +1,10 @@
-<Advanced Startup/>
+To install Ubuntu, follow the steps below. 
+
+To get to advanced startup, open windows settings, then click Update & Security. Select Recovery from the left hand side, and click the button labeled restart now under Advanced Startup. 
+
+![Advanced Startup Windows](https://raw.githubusercontent.com/kfechter/LegionY530Ubuntu/ab92b30dcb6e4ec996fdbd1db41022106beaf51e/Images/windowsSettings.PNG "Advanced Startup")
+
+
  <BootMenu/>
    <BootSelection/>
      
