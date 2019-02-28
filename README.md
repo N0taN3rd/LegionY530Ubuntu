@@ -6,21 +6,10 @@
 
 This repository provides scripts and a step by step on how to get Ubuntu running on the Lenovo Legion Y530.
 
-Read the [Considerations and notes](Sections/Considerations.md) Before following this guide. 
+### Please Read the [Considerations and notes](Sections/Considerations.md) Before following this guide.
 
+Now that the Kernel doesn't need to be changed, Disabling Secureboot is no longer necessary. This guide now has two pathways, one for installing with secureboot, and one for disabling secureboot. If at any point, you run into issues, you can view the [troubleshooting readme](Sections/Troubleshooting.md) file for common solutions. 
 
+[Install Ubuntu Without SecureBoot](Sections/SecureBootOff.md)
 
-
-
-Now that the important information is out of the way, let's begin
-
-### If you want to disable secureboot, follow the steps here <steps here please>
-
-
-## 3. Boot from the flash drive.
-
-After selecting yes to save the settings, the machine will reboot. as soon as the reboot happens, start pressing the F12 button until you see the boot device selection screen. 
-
-![Boot Device Selection](https://raw.githubusercontent.com/kfechter/LegionY530Ubuntu/8234d4c4a473c91043bc3caae6725cc2e917647b/Images/bootManager.jpg "Boot Device Selection")
-
-Select the flash drive and press enter to boot. on the screen that pops up, select "Try ubuntu without installing" or the equivalent option. 
+[Install Ubuntu With SecureBoot](Sections/SecureBootOn.md)
