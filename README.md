@@ -59,32 +59,3 @@ Select the "Install Ubuntu" icon on the desktop and follow the wizard to install
 If wifi is not working working, you may need to perform steps under "Additional Notes" at the bottom.  
 
 Run the following command `sudo apt update && sudo apt dist-upgrade`. Follow any terminal prompts and when updates are complete, restart the computer. After rebooting, follow the above steps for getting wifi working. the next step will get wifi working permanently.
-
-# Additional Notes
-
-### Disable Nouveau Modeset
-
-to disable modeset for the nouveau module, follow the below steps
-
-reboot the machine, as soon as the screen turns purple (After the Legion logo screen), press esc. You should see a screen similar to the following.
-
-![Selecting Ubuntu in Grub](https://raw.githubusercontent.com/kfechter/LegionY530Ubuntu/0fc36c44e069d4e157faa4b16e87cc9625a7c0e1/Images/grubSelectionScreen.png)
-
-highlight the entry that says "Ubuntu" and press 'e', you should get a screen that looks similar to the following.
-
-![Adding Nouveau.modeset=0](https://raw.githubusercontent.com/kfechter/LegionY530Ubuntu/0fc36c44e069d4e157faa4b16e87cc9625a7c0e1/Images/kernelOptions.png)
-
-find the section that says 'quiet splash', and add nouveau.modeset=0 to it so it reads 'quiet splash noveau.modeset=0'
-
-press F10 to boot with the changes.
-
-### Nvidia Switching
-With kernel 4.20, rebooting is no longer necessary to switch profiles, however log out and log in is still required.
-
-### Wifi Fix for Realtek Cards
-
-If your laptop has a Realtek Card, you will notice that doing the rmmod on ideapad_laptop won't fix the wifi. to get the wifi working, perform the following steps.
-
-run the command `echo "options r8822be aspm=0" | sudo tee /etc/modprobe.d/r8822be.conf`    
-run the command `sudo rmmod r8822be`    
-run the command `sudo modprobe r8822be`
