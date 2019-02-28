@@ -47,15 +47,3 @@ After selecting yes to save the settings, the machine will reboot. as soon as th
 ![Boot Device Selection](https://raw.githubusercontent.com/kfechter/LegionY530Ubuntu/8234d4c4a473c91043bc3caae6725cc2e917647b/Images/bootManager.jpg "Boot Device Selection")
 
 Select the flash drive and press enter to boot. on the screen that pops up, select "Try ubuntu without installing" or the equivalent option. 
-
-## 5. Install Ubuntu
-
-If wifi is not working working, you may need to perform steps under "Additional Notes" at the bottom.  
-
-Select the "Install Ubuntu" icon on the desktop and follow the wizard to install Ubuntu on your desired drive. Once completed, select the option to restart the computer.
-
-## 6. Install any available updates
-
-If wifi is not working working, you may need to perform steps under "Additional Notes" at the bottom.  
-
-Run the following command `sudo apt update && sudo apt dist-upgrade`. Follow any terminal prompts and when updates are complete, restart the computer. After rebooting, follow the above steps for getting wifi working. the next step will get wifi working permanently.
