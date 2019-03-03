@@ -18,9 +18,15 @@ To use Magic SysRq, hold down the right Alt key and PrtSc, and then type (In Ord
 
 * __This guide assumes decent knowledge of the Linux command line__
 * __Following this guide will result in Windows being replaced with Ubuntu__
-  * You can however, choose to install alongside your current OS
-* __Several features of the Legion will be unavailable on Linux__
+  * However, you can choose to install alongside your current OS.
+* __Several features of the Legion will be unavailable on Linux (See Below)__
 
 ### Back up your data using Windows Backup or similar before continuing
 
-### TODO: EMBELLISH THESE
+# Features that will not work
+
+* Screen Record Button - This shares scancodes with L_SHIFT and L_CTRL. Since scancodes cannot be changed without hardware modification, this is not easily fixable. 
+![Screen Record Button](KeyboardImages/ScreenRecordButton.PNG)
+
+* Monitor Switch (Projection Button) - This may press Win + P, so perhaps mapping it is possible
+![Screen Record Button](KeyboardImages/ScreenRecordButton.PNG)
