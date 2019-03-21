@@ -32,3 +32,21 @@ press F10 to boot with the changes.
 if after doing sudo prime-select nvidia, you notice that external screens don't work. Try logging out and back in. If they still don't work, then reboot the machine. 
 
 ##### __Note: If you deviate from the stock kernel, this may cause issues with the nvidia drivers__
+
+### Ubuntu doesn't detect my disk drives/Doesn't detect Windows is installed.
+
+Kudos to Github user [@tommyalvarez](https://github.com/tommyalvarez) and [This site](https://davidvielmetter.com/tricks/installing-ubuntu-dual-boot-on-a-dell-precision-which-already-runs-windows-10/) for this information
+
+The most likely cause is you have optane. You can confirm this by opening PowerShell as an administrator and running the following command 
+
+` Get-PhysicalDisk`
+
+If the output contains a device with a FriendlyName of Intel Optane+<xxxGB>HDD Where xxx will be a capacity, you have optane. To get ubuntu installed in a dual boot scenario with optane follow the steps below. 
+
+Instead of selecting "Install Ubuntu," select the "Try Ubuntu" option. Then open a terminal and issue the following command
+
+` sudo dmraid -E -r /dev/sda`
+
+It will ask if you want to delete metadata, you can say yes to this. 
+
+You can now exit the terminal and follow the guide to install Ubuntu in a dualboot scenario
