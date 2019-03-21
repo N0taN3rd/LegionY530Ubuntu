@@ -1,3 +1,5 @@
+#### This will install Ubuntu leaving SecureBoot enabled. If you want to disable it, follow the guide [here](SecureBootOff.md)
+
 To install Ubuntu, follow the steps below. 
 
 To get to advanced startup, open windows settings, then click Update & Security. Select Recovery from the left hand side, and click the button labeled restart now under Advanced Startup. 
